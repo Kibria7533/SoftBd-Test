@@ -1,0 +1,24 @@
+My Considerations
+*I will use s3 storage for storing tumbnail and pdf
+
+*And CDN for high availability
+
+*Redis or memecash for save five popular books in each query 
+
+*For scalability assurance we can use kubernetics
+
+*Low latency/multiple ag we can use aws different  available  zone or terraform for managing different cloud providers 
+
+* For typehead suggestion we can use elastic search
+
+* We can use a separate hast table which store every query  https://en.wikipedia.org/wiki/Count%E2%80%93min_sketch
+
+* Here my own channel YouTube content on hash function on top of searching in large scale  https://www.youtube.com/channel/UC8kXt9dkDr2n7zEDnZ4j5aQ/playlists
+
+*.I will use single repo or will store the hash table in a centralized store to avoid disk i/o operatios
+
+*We can use time interval like top 5 book in last month and then easily 
+
+by doing corn job like updating popularity table in the middle of a day.
+
+* We can use tree and have a rank number in each node or we can precompute the higher popular result
